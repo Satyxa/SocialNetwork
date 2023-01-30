@@ -1,0 +1,126 @@
+/* / */
+.posts__ava {
+    border-radius: 250px;
+    border: 2px solid rgb(81, 137, 221);
+}
+
+.posts-box {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.post-body {
+    background-color: white;
+    padding: 25px;
+    border-radius: 5px;
+    width: 600px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.box-for-post {
+    text-align: justify;
+    display: flex;
+    padding: 0 25px 0 25px;
+    box-sizing: border-box;
+    max-width: 100%;
+    height: auto;
+    flex-direction: column;
+}
+
+.post__content {
+    max-width: 540px;
+    box-sizing: border-box;
+    padding-top: 10px;
+    word-wrap: break-word;
+    display: block;
+}
+
+.posts__ava__info {
+    display: flex;
+}
+
+.posts__info-title {
+    font-size: 18px;
+    font-weight: 900;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.posts__info-subtitle {
+    font-size: 14px;
+    font-weight: 700;
+    color: #57585a;
+}
+
+.posts__info-title,
+.posts__info-subtitle {
+    text-align: center;
+}
+
+p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.pj {
+    display: flex;
+    flex-direction: column;
+    padding: 18px 0;
+    padding-left: 15px;
+}
+
+.like {
+    border-right: 1px solid red;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.dislike {
+    border-left: 1px solid rgb(102, 2, 2);
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.like:hover {
+    background-color: pink;
+}
+
+.dislike:hover {
+    background-color: rgb(215, 135, 240);
+}
+
+.dislike:focus {
+    background-color: rgb(215, 135, 240);
+}
+
+.like:active {
+    background-color: pink;
+}
+
+
+.like,
+.dislike {
+    width: 80px;
+    height: 25px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+.countbox {
+    text-align: center;
+}
+
+.grade {
+    display: flex;
+    justify-content: end;
+}

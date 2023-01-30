@@ -1,0 +1,20 @@
+.link {
+    text-decoration: none;
+    color: black;
+    /* border: 1px solid black; */
+    padding: 5px;
+    text-align: start;
+    outline: none;
+}
+
+.link:hover {
+    background-color: #e5e7eb;
+}
+
+.hr-for-link {
+    display: block;
+    overflow: visible;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

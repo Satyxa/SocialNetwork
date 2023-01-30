@@ -1,0 +1,46 @@
+.messenger__info-ava {
+    border-radius: 100px;
+
+}
+
+.messenger__list {
+    width: 50%;
+    background-color: edeef0;
+    /* border: 1px solid green; */
+}
+
+.messenger__element {
+    /* border: 1px solid yellow; */
+    background-color: white;
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid #edeef0;
+    display: block;
+}
+
+.messenger__element:hover {
+    background-color: rgb(252, 222, 227);
+    cursor: pointer;
+}
+
+.messenger__element-content {
+    display: flex;
+}
+
+
+
+.messenger__element-inscription {
+    margin-left: 10px;
+}
+
+.heightauto {
+    height: auto;
+    padding-top: 5px;
+}
+
+.messenger__hr {
+    width: 89%;
+    padding: 0;
+    margin: 0;
+    float: right;
+}
