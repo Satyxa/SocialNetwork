@@ -4,7 +4,7 @@
 }
 
 .messenger__list {
-    width: 50%;
+    width: 60%;
     background-color: edeef0;
     /* border: 1px solid green; */
 }
@@ -19,7 +19,7 @@
 }
 
 .messenger__element:hover {
-    background-color: rgb(252, 222, 227);
+    background-color: #f5f6f8;
     cursor: pointer;
 }
 
@@ -36,6 +36,7 @@
 .heightauto {
     height: auto;
     padding-top: 5px;
+    color: black;
 }
 
 .messenger__hr {

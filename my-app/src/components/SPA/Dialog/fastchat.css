@@ -1,9 +1,11 @@
 .messenger__fast__hr {
     width: 100%;
-    padding: 0;
+    margin: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
     float: right;
+    background-color: #edeef0;
+    color: #edeef0;
 }
 
 .messenger__fast {
@@ -19,15 +21,38 @@
     border-radius: 8px;
 }
 
+.border {
+    border-bottom: 1px solid rgb(255, 255, 0);
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+
+
 .padding__zero {
-    padding: 0;
+    padding: 10px;
     margin: 0;
-    font-weight: 100;
+    font-weight: 400;
 }
 
 .messenger__fast-items-box {
-    border-bottom: 1px solid gray;
     padding-bottom: 10px;
     padding-top: 5px;
+    border-radius: 8px;
+}
 
+.messenger__fast-items-box:hover {
+    background-color: #edeef0;
+}
+
+.fontChTit {
+    font-size: 14px;
+}
+
+.fontCh {
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+
+    padding: 10px;
 }

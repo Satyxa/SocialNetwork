@@ -44,10 +44,13 @@
   border-top-right-radius: 12px;
 }
 
-
+a {
+  text-decoration: none;
+}
 
 .font {
   font-family: cursive;
+  color: black;
 }
 
 img {
@@ -66,7 +69,7 @@ body {
   grid-template-areas:
     " c c c "
     " m spa spa ";
-  grid-template-rows: 75px 1fr;
+  grid-template-rows: 57px 1fr;
   grid-template-columns: 1.6fr 8fr;
 }
 

@@ -1,9 +1,6 @@
 import './NewPost.css';
 
 function NewPost(props) {
-    const count = () => {
-        props.likesCount++
-    }
     return (
 
         <div className="post-body">
@@ -18,7 +15,7 @@ function NewPost(props) {
                 <p className="post__content font">{props.message}</p>
                 <div className="grade">
                     <div className="countbox">
-                        <button className="like font" onClick={count}>Like</button>
+                        <button className="like font">Like</button>
                         <p className="likesCount"> {props.likesCount} </p>
                     </div>
 

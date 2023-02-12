@@ -1,7 +1,10 @@
 import './posts.css';
 import NewPost from './NewPost/NewPost'
 
-function Posts() {
+function Posts(props) {
+    let PostElement = props.PostData.map(p => {
+        return <NewPost id={p.id} message={p.message} likesCount={p.likesCount} dislikesCount={p.dislikesCount} />
+    })
 
     return (
         <><div className="post">
@@ -14,8 +17,7 @@ function Posts() {
             </div>
         </div>
             <div className="posts-box ">
-                <NewPost message="Я ЗДЕСЬ" likesCount="12" dislikesCount="9" />
-                <NewPost message="УРА" likesCount="23" dislikesCount="45" />
+                {PostElement}
             </div></>
     );
 }

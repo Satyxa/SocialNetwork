@@ -1,15 +1,18 @@
-import './Content.css';
+import React from 'react'
+import './Profile.css';
 import Info from './Profile/Info/Info';
 import Posts from './Profile/ProfilePosts/posts';
-function Content() {
+function Profile(props) {
+    console.log(props.State);
+    console.log('props.State');
     return (
         <div className="SPA test">
             <main className='Content'>
                 <Info />
-                <Posts />
+                <Posts PostData={props.PostData} />
             </main>
         </div>
     );
 }
 
-export default Content;
+export default Profile;

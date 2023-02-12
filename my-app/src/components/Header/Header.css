@@ -11,9 +11,11 @@
 
 .vkontakte {
     font-size: 18px;
+    color: #447bba;
 }
 
 .search {
+    margin-bottom: 8px;
     width: 200px;
     height: 30px;
     margin-left: 20px;
