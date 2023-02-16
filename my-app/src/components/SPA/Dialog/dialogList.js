@@ -20,7 +20,9 @@ const DialogItem = (props) => {
 }
 
 function DialogList(props) {
-    let dialogElement = props.State.Data.map((d) => {
+    console.log("dialog list props");
+    console.log(props.Data);
+    let dialogElement = props.Data.map((d) => {
         return <DialogItem imgId={d.imgId} id={d.id} name={d.name} message={d.message} />
     })
     return (

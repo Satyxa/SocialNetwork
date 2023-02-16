@@ -19,8 +19,10 @@ const Message = (props) => {
 
 
 function Id2(props) {
-
-    let MessagesElement = props.State.MessageDataId2.map((d) => {
+    console.log('Id2 props');
+    console.log(props.State);
+    console.log(props);
+    let MessagesElement = props.MessageDataId2.map((d) => {
         return <Message id={d.id} message={d.message} />
     })
     return (

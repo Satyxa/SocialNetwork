@@ -9,9 +9,12 @@ import Messenger from './components/SPA/Messenger'
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-
+// Data={props.State.MessengerData.Data}
+//                 MessageDataId1={props.State.MessengerData.MessengerWindow.MessageDataId1}
+//                 MessageDataId2={props.State.MessengerData.MessengerWindow.MessageDataId2}
 
 function App(props) {
+  console.log('App props');
   console.log(props.State);
   return (
     <BrowserRouter>
@@ -27,10 +30,7 @@ function App(props) {
               {<Profile
                 PostData={props.State.ProfileData.Posts.PostData} />} />
             <Route path="/messenger/*" element=
-              {<Messenger
-                Data={props.State.MessengerData.Data}
-                MessageDataId1={props.State.MessengerData.MessengerWindow.MessageDataId1}
-                MessageDataId2={props.State.MessengerData.MessengerWindow.MessageDataId2} />} />
+              {<Messenger DataForMessage={props.State.MessengerData} />} />
           </Routes>
         </div>
       </div>

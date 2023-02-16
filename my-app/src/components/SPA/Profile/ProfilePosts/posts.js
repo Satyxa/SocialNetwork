@@ -2,6 +2,10 @@ import './posts.css';
 import NewPost from './NewPost/NewPost'
 
 function Posts(props) {
+    console.log('posts props');
+    console.log(props.PostData);
+    console.log('posts props')
+    console.log(props);
     let PostElement = props.PostData.map(p => {
         return <NewPost id={p.id} message={p.message} likesCount={p.likesCount} dislikesCount={p.dislikesCount} />
     })
