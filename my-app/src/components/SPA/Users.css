@@ -1,0 +1,153 @@
+button {
+    cursor: pointer;
+}
+
+.friend {
+    font-weight: 300;
+    font-size: 22px;
+}
+
+.users-box {
+    border: 1px solid white;
+    border-radius: 8px;
+    width: 50%;
+    height: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.center {
+    width: 90%;
+}
+
+.friendSearch {
+    border: 1px solid #edeef0;
+    border-radius: 8px;
+    background-color: white;
+    width: 100%;
+    height: 32px;
+    padding: 8px 70px 8px 12px
+}
+
+.user-card {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    border-bottom: 1px solid grey;
+}
+
+
+
+.users-avatar-box {
+    float: left;
+}
+
+.users-avatar {
+    border-radius: 60px;
+}
+
+.users-info-box {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.users-button-box {
+    display: flex;
+    flex-direction: column;
+    float: right;
+}
+
+
+
+.users-name {
+    color: #2a5885;
+    font-weight: 500;
+}
+
+.users-country-town,
+.users-education,
+.users-status {
+    color: grey
+}
+
+.users-change-statusFriendly {
+    width: 170px;
+    height: 30px;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    background-color: #447bba;
+    font-weight: 500;
+    cursor: pointer;
+    color: white;
+    border: 1px solid #447bba;
+}
+
+.users-writeMessage {
+    width: 170px;
+    height: 30px;
+    border-radius: 8px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: #447bba;
+    border: 1px solid #447bba;
+}
+
+.users-showmore-box {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+}
+
+.users-showmore {
+    width: 170px;
+    height: 30px;
+    border-radius: 8px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: #447bba;
+    border: 1px solid #447bba;
+
+}
+
+.users-writeMessage:hover,
+.users-change-statusFriendly:hover,
+.users-showmore:hover {
+    background-color: #5b8bc2;
+}
+
+.ui-bll-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.selectedPage {
+    color: pink;
+    cursor: pointer !important;
+}
+
+.users_pages {
+    cursor: pointer !important;
+}
+
+.choosePage {
+    cursor: pointer !important;
+
+}
+
+.pzpz {
+    cursor: pointer !important;
+    display: block;
+    width: 100%;
+    word-break: break-word;
+}

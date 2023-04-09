@@ -58,7 +58,7 @@
 .window__message {
     display: flex;
     align-items: flex-end;
-    flex-direction: column;
+    flex-direction: column-reverse;
     /* border: 1px solid burlywood; */
     padding-left: 20px;
     padding-right: 20px;
@@ -87,8 +87,11 @@
 
 .message-box {
     display: block;
-    width: 100%;
-    min-height: 60px;
+    width: 90%;
+    min-height: auto;
+    margin: 0 auto;
+    /* margin-right: 15px; */
+    /* padding-right: 15px; */
     /* border: 1px solid rgb(136, 19, 74); */
 }
 

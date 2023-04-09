@@ -8,7 +8,7 @@ function Menu() {
             <nav className='sideMenu'>
                 <NavLink to='/profile' className="link">Моя страница</NavLink>
                 <NavLink to='/messenger' className="link">Мессенджер</NavLink>
-                <NavLink to='/messenger' className="link">Друзья</NavLink>
+                <NavLink to='/users' className="link">Друзья</NavLink>
                 <NavLink to='/messenger' className="link">Сообщества</NavLink>
                 <NavLink to='/messenger' className="link">Новости</NavLink>
                 <NavLink to='/messenger' className="link">Стикеры</NavLink>
