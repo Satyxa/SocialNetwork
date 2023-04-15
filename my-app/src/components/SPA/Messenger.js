@@ -10,6 +10,7 @@ import DialogListContainer from './Dialog/dialogList_container';
 function Messenger(props) {
     // console.log('Messenger props AAAAAAAAAAAAAAA');
     // console.log(props);
+
     return (
         <div className="SPA test">
             <main className='Messenger'>

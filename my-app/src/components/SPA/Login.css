@@ -1,0 +1,44 @@
+.login {
+    /* border: 1px solid gray; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 90%;
+    height: 80%;
+}
+
+.login-box {
+    display: flex;
+    /* flex-direction: column; */
+    /* align-items: center;
+    justify-content: center; */
+    /* border: 1px solid green; */
+    width: 700px;
+}
+
+.login-item {
+    width: 500px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+.login-button {
+    width: 200px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.login-form-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-checkbox {
+    margin-top: 10px;
+}
+
+.error {
+    border: 1px solid red;
+}

@@ -18,7 +18,7 @@ import DialogList from './dialogList';
 
 const mapStateToProps = (state) => {
     return {
-        Data: state.MessengerData.Data
+        Data: state.MessengerData.Data,
     }
 }
 

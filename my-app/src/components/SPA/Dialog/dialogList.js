@@ -1,6 +1,6 @@
 import React from 'react';
 import './dialogList.css';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Navigate } from 'react-router-dom';
 
 const DialogItem = (props) => {
     let path = '/messenger/' + props.id

@@ -2,7 +2,9 @@ import './Users.css'
 import DefaultUserPhoto from '../../assets/ava.jpg'
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-
+import axios from 'axios'
+import API from '../../API/api'
+// className='users-change-statusFriendly'
 const Users = (props) => {
     let pageQuantity = Math.ceil(props.totalUsersCount / props.pageSize)
     let pages = []
@@ -10,6 +12,9 @@ const Users = (props) => {
     for (let i = 1; i <= pageQuantity; i++) {
         pages.push(i)
     }
+    console.log(props.followingInProgress);
+
+
     return <div>
         <section className="users">
             <div className="flexbox">
@@ -37,6 +42,7 @@ const Users = (props) => {
                         {
                             props.users.map(u => {
 
+
                                 return (
                                     <>
 
@@ -57,7 +63,14 @@ const Users = (props) => {
                                                     </div>
 
                                                     <div className='users-button-box'>
-                                                        {u.followed ? <button className='users-change-statusFriendly' onClick={() => props.unfollow(u.id)}>Пошёл нахуй</button> : <button className='users-change-statusFriendly' onClick={() => props.follow(u.id)}>Добавить в друзья</button>}
+                                                        {u.followed ? <button disabled={props.followingInProgress.some(id => id === u.id)} onClick={() => {
+                                                            props.unFollowing(u.id)
+
+                                                        }}>Удалить из друзей</button>
+                                                            : <button disabled={props.followingInProgress.some(id => id === u.id)} onClick={() => {
+                                                                props.following(u.id)
+
+                                                            }}>Добавить в друзья</button>}
                                                         <button className='users-writeMessage'>Написать сообщение</button>
                                                     </div>
                                                 </div>

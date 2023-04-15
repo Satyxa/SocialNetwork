@@ -1,22 +1,24 @@
 import React from 'react'
 import Profile from './Profile';
-import axios from 'axios';
 import { connect } from 'react-redux';
-import { setUserProfile } from '../../FakeRedux/profile_reducer';
+import {
+    setUserProfile, getUserProfile,
+    getUserStatus, updateUserStatus
+} from '../../FakeRedux/profile_reducer';
 import { useParams } from "react-router-dom";
+import withAuthRedirect from './../../HOC/withAuthRedirect'
+import { compose } from 'redux';
+
 class ProfileContainer extends React.Component {
 
 
     componentDidMount() {
         let userId = this.props.match.params.userId;
-        // let userId = this.props.router.params.userId;
         if (!userId) {
-            userId = 28511; //Пишем Ваш id
+            userId = 28511;
         }
-        console.log(this.userId);
-        axios.get(`https://social-network.samuraijs.com/api/1.0/profile/${userId}`).then(response => {
-            this.props.setUserProfile(response.data)
-        })
+        this.props.getUserProfile(userId)
+        this.props.getUserStatus(userId)
     }
 
     componentDidUpdate(prevProps) {
@@ -30,14 +32,16 @@ class ProfileContainer extends React.Component {
 
     render() {
         return (
-            <Profile {...this.props} profile={this.props.profile} />
+            <Profile {...this.props}
+                updateUserStatus={this.props.updateUserStatus}
+                status={this.props.status} profile={this.props.profile} />
         );
     }
 }
 
 let mapStateToProps = (state) => ({
-
-    profile: state.ProfileData.profile
+    profile: state.ProfileData.profile,
+    status: state.ProfileData.status
 })
 
 function withRouter(Children) {
@@ -48,4 +52,16 @@ function withRouter(Children) {
     }
 }
 
-export default connect(mapStateToProps, { setUserProfile })(withRouter(ProfileContainer))
+export default compose(connect
+    (
+        mapStateToProps,
+        {
+            setUserProfile,
+            getUserProfile,
+            getUserStatus,
+            updateUserStatus
+        }
+    ),
+    withAuthRedirect,
+    withRouter
+)(ProfileContainer)

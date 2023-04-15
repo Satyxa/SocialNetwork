@@ -7,7 +7,11 @@ function Profile(props) {
     return (
         <div className="SPA test">
             <main className='Content'>
-                <Info profile={props.profile} />
+                <Info
+                    profile={props.profile}
+                    updateUserStatus={props.updateUserStatus}
+                    status={props.status}
+                />
                 <PostsContainer />
             </main>
         </div>

@@ -1,6 +1,6 @@
 import './Info.css';
 import Preloader from './../../../Preloader'
-
+import Status from './Status';
 function Info(props) {
     if (!props.profile) {
         return <Preloader />
@@ -14,6 +14,10 @@ function Info(props) {
                         <img className="profile__info-ava" src={props.profile.photos.large ? props.profile.photos.large : 'https://i.pinimg.com/736x/53/4b/35/534b352b318223b4d0271e8ae9af9879.jpg'} width="200" height="200px" />
                         <div className="profile__info-generally">
                             <h1 className="profile__info-title font">{props.profile.fullName}</h1>
+                            <Status
+                                updateUserStatus={props.updateUserStatus}
+                                status={props.status}
+                            />
                             <h2 className="profile__info-subtitle font">{props.profile.lookingForAJobDescription}</h2>
                         </div>
                     </div>
